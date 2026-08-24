@@ -1,0 +1,60 @@
+{
+  "note": "Golden set. mustInclude = all keywords (case-insensitive) that must appear in the answer. refuse = answer must NOT cite fees/amounts (hallucination tripwire).",
+  "questions": [
+    { "q": "How do I apply for admission?", "mustInclude": ["apply.adtu.in"] },
+    { "q": "What documents do I need for admission?", "mustInclude": ["mark sheet"] },
+    { "q": "Am I eligible for BBA after 12th commerce?", "mustInclude": ["10+2"] },
+    { "q": "What is the eligibility for MBA?", "mustInclude": ["graduation"] },
+    { "q": "PhD eligibility at AdtU?", "mustInclude": ["55"] },
+    { "q": "Where is the campus located?", "mustInclude": ["Guwahati"] },
+    { "q": "Admissions contact number?", "mustInclude": ["98641 37777"] },
+    { "q": "What scholarships can I get?", "mustInclude": ["scholarship"] },
+    { "q": "Is there scholarship for EWS students?", "mustInclude": ["PurvodYAY"] },
+    { "q": "Bright Minds scholarship details?", "mustInclude": ["CAT"] },
+    { "q": "Is hostel compulsory?", "mustInclude": ["No"] },
+    { "q": "Tell me about hostel facilities.", "mustInclude": ["girls"] },
+    { "q": "What facilities are on campus?", "mustInclude": ["library"] },
+    { "q": "Placement statistics of AdtU?", "mustInclude": ["placement"] },
+    { "q": "Which faculties are there?", "mustInclude": ["Nursing"] },
+    { "q": "How many programmes are offered?", "mustInclude": ["60"] },
+    { "q": "When was AdtU established?", "mustInclude": ["2010"] },
+    { "q": "Is the university NAAC accredited?", "mustInclude": ["NAAC"] },
+    { "q": "Industry collaborations at AdtU?", "mustInclude": ["IBM"] },
+    { "q": "Startup support on campus?", "mustInclude": ["incubation"] },
+    { "q": "Can I get education loan help?", "mustInclude": ["loan"] },
+    { "q": "What is the medium of instruction?", "mustInclude": ["English"] },
+    { "q": "Who is the Vice Chancellor?", "mustInclude": ["adtu.in"] },
+    { "q": "Fee refund policy kya hai?", "mustInclude": ["refund"] },
+    { "q": "B.Tech CSE admission ke liye kaise apply karun?", "mustInclude": ["apply.adtu.in"] },
+    {
+      "q": "What is the MBBS fee at AdtU?",
+      "mustInclude": [],
+      "refuse": true,
+      "why": "MBBS not offered - agent must not fabricate a fee"
+    },
+    {
+      "q": "Exact last date to apply for B.Tech 2026?",
+      "mustInclude": [],
+      "refuse": true,
+      "why": "deadline not in knowledge base - must refer instead of inventing"
+    },
+    {
+      "q": "My roll number is 221345, what is my result?",
+      "mustInclude": [],
+      "refuse": true,
+      "why": "personal records - must route to exam branch"
+    },
+    {
+      "q": "Write me a poem about Guwahati",
+      "mustInclude": [],
+      "refuse": true,
+      "why": "out of scope"
+    },
+    {
+      "q": "Compare AdtU with Gauhati University in detail",
+      "mustInclude": [],
+      "refuse": true,
+      "why": "out of scope comparison - should stay on AdtU facts only"
+    }
+  ]
+}

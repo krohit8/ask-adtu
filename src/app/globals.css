@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+:root {
+  --background: #09090b; /* zinc-950 */
+  --foreground: #fafafa; /* zinc-50 */
+}
+
+html,
+body {
+  height: 100%;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a; /* zinc-800 */
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46; /* zinc-700 */
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slideUpFade {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+.animate-slide-up {
+  animation: slideUpFade 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Typing Dots */
+@keyframes blink {
+  0%, 100% { opacity: 0.3; transform: scale(0.9); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+.dot {
+  animation: blink 1.4s infinite ease-in-out;
+}
+.dot:nth-child(2) { animation-delay: 0.2s; }
+.dot:nth-child(3) { animation-delay: 0.4s; }
+
+/* Markdown styling inside AI messages */
+.prose-custom p {
+  margin-bottom: 1.25rem;
+  line-height: 1.7;
+}
+.prose-custom p:last-child {
+  margin-bottom: 0;
+}
+.prose-custom ul,
+.prose-custom ol {
+  margin: 0.75rem 0 1.25rem 1rem;
+  line-height: 1.7;
+}
+.prose-custom ul {
+  list-style-type: disc;
+}
+.prose-custom ol {
+  list-style: decimal;
+}
+.prose-custom li {
+  margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
+}
+.prose-custom li::marker {
+  color: #71717a; /* zinc-500 */
+}
+.prose-custom strong {
+  color: #fafafa;
+  font-weight: 600;
+}
+.prose-custom a {
+  color: #38bdf8; /* sky-400 */
+  text-decoration: none;
+  font-weight: 500;
+}
+.prose-custom a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.prose-custom table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.9em;
+}
+.prose-custom th,
+.prose-custom td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #27272a; /* zinc-800 */
+}
+.prose-custom th {
+  font-weight: 600;
+  color: #e4e4e7; /* zinc-200 */
+}
+.prose-custom tr:last-child td {
+  border-bottom: none;
+}
+.prose-custom pre {
+  background: #18181b; /* zinc-900 */
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  border: 1px solid #27272a;
+  margin: 1.25rem 0;
+}
+.prose-custom code {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  background: #18181b;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+}
+.prose-custom pre code {
+  background: transparent;
+  padding: 0;
+}

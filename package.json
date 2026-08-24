@@ -1,0 +1,44 @@
+{
+  "name": "ask-adtu",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "crawl": "tsx scripts/crawl.ts",
+    "pdf": "tsx scripts/extract-pdf.ts",
+    "ingest": "tsx scripts/ingest.ts",
+    "eval": "tsx eval/run.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ai-sdk/google": "^4.0.50",
+    "@ai-sdk/react": "^4.0.80",
+    "@huggingface/transformers": "^4.2.0",
+    "ai": "^7.0.77",
+    "better-sqlite3": "^13.0.3",
+    "cheerio": "^1.2.0",
+    "minisearch": "^7.2.0",
+    "next": "16.3.2",
+    "pdf-parse": "^2.4.5",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.2",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.12",
+    "typescript": "^5"
+  }
+}
