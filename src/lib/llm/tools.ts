@@ -1,5 +1,6 @@
 import { tool } from "ai";
 import { z } from "zod";
+import { createLead } from "@/db/store";
 
 const SIMULATED_NOTE =
   "SIMULATED DEMO DATA - this is a mock service for demonstration, not a real university record. Present it to the user with that caveat.";
@@ -17,6 +18,34 @@ const APP_STATUSES = [
   { stage: "Offer Letter Issued", detail: "Provisional admission offer issued - complete fee payment to confirm seat." },
   { stage: "Enrolled", detail: "Admission confirmed. Welcome to AdtU!" },
 ];
+
+export function counselingTool(
+  sessionId: string,
+  interestedDomain: string | undefined,
+  userQuery: string,
+) {
+  return tool({
+    description:
+      "Record a counseling lead when the user wants the counseling team to contact them. Call this ONLY after the user explicitly agrees and provides a phone number.",
+    inputSchema: z.object({
+      phoneNumber: z.string().min(7).describe("Student's phone number with country code if possible"),
+      contactRequested: z.boolean().default(true).describe("Whether the user consented to be contacted"),
+    }),
+    execute: async ({ phoneNumber, contactRequested }) => {
+      await createLead({
+        sessionId,
+        userQuery,
+        interestedDomain: interestedDomain ?? null,
+        phoneNumber,
+        contactRequested,
+      });
+      return {
+        success: true,
+        message: "Your request has been noted. Our counseling team will contact you soon.",
+      };
+    },
+  });
+}
 
 export const adtuTools = {
   get_application_status: tool({

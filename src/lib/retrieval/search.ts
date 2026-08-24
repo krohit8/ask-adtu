@@ -12,8 +12,8 @@ interface IndexedDoc {
 
 let mini: MiniSearch<IndexedDoc> | null = null;
 
-function buildKeywordIndex() {
-  const chunks = getChunks();
+async function buildKeywordIndex() {
+  const chunks = await getChunks();
   mini = new MiniSearch<IndexedDoc>({
     fields: ["title", "text"],
     storeFields: ["id"],
@@ -38,9 +38,9 @@ function cosine(a: Float32Array, b: Float32Array): number {
 
 /** Hybrid retrieval: dense cosine + keyword (BM25-ish) fused with reciprocal-rank fusion. */
 export async function retrieve(query: string, topN = RETRIEVE.finalTopN): Promise<RetrievedChunk[]> {
-  const chunks = getChunks();
+  const chunks = await getChunks();
   if (chunks.length === 0) return [];
-  const index = mini ?? buildKeywordIndex();
+  const index = mini ?? (await buildKeywordIndex());
 
   // 1) dense (local model - free, offline)
   const [q] = await embedLocal([query]);

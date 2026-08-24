@@ -11,7 +11,7 @@ import { CHAT_MODEL } from "@/lib/llm/model";
 import * as store from "@/db/store";
 import { buildContext, retrieve } from "@/lib/retrieval/search";
 import { buildSystemPrompt } from "@/lib/llm/prompt";
-import { adtuTools } from "@/lib/llm/tools";
+import { adtuTools, counselingTool } from "@/lib/llm/tools";
 import { updateSlots } from "@/lib/session/memory";
 
 export const runtime = "nodejs";
@@ -42,7 +42,7 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "messages[] required" }, { status: 400 });
   }
 
-  if (!store.isReady()) {
+  if (!(await store.isReady())) {
     return NextResponse.json(
       {
         error:
@@ -56,7 +56,6 @@ export async function POST(req: Request) {
   const slots = updateSlots(sessionId, userTexts);
   const latestQuery = userTexts[userTexts.length - 1] ?? "";
 
-  // Retrieval: latest question, enriched with remembered programme slot.
   const slotToken = slots.programme?.split(/[ /\+]/)[0];
   const enrichedQuery =
     slots.programme && (!slotToken || !new RegExp(slotToken, "i").test(latestQuery))
@@ -66,11 +65,9 @@ export async function POST(req: Request) {
   const results = await retrieve(enrichedQuery);
   const { context, sources } = buildContext(results);
 
-  // Grounding: replace the latest user turn with context + question.
-  const history = ((await convertToModelMessages(messages)) as ModelMessage[]).slice(
-    0,
-    -1,
-  );
+  const isUnanswered = results.length === 0;
+
+  const history = ((await convertToModelMessages(messages)) as ModelMessage[]).slice(0, -1);
   const groundedTurn: ModelMessage = {
     role: "user",
     content: `CONTEXT FROM ADTU.IN:
@@ -78,14 +75,18 @@ ${context || "(no matching context found)"}
 
 QUESTION: ${latestQuery}
 
+${isUnanswered ? "NOTE: No context matches this query. Follow rule #3: say you don't have verified information, then offer counseling contact if the user agrees. If the user agrees and provides a phone number, call the request_counseling tool." : ""}
+
 Answer per your system rules. Cite [n] for every factual claim.`,
   };
 
+  const allTools = { ...adtuTools, request_counseling: counselingTool(sessionId, slots.programme, latestQuery) };
+
   const result = streamText({
     model: google(CHAT_MODEL),
-    system: buildSystemPrompt(slots, new Date()),
+    system: buildSystemPrompt(slots, new Date(), sessionId),
     messages: [...history, groundedTurn],
-    tools: adtuTools,
+    tools: allTools,
     stopWhen: stepCountIs(4),
     temperature: 0.3,
     maxRetries: 1,

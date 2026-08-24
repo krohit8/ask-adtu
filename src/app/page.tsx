@@ -28,7 +28,7 @@ const QUICK_PROMPTS = [
 function SourcesRow({ sources }: { sources: NonNullable<ChatMetadata["sources"]> }) {
   return (
     <div className="mt-4 mb-2 flex flex-wrap gap-2 animate-fade-in">
-      {sources.map((s, i) => (
+      {sources.map((s) => (
         <a
           key={s.n}
           href={s.url}

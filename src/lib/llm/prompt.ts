@@ -1,6 +1,6 @@
 import type { Slots } from "../session/memory";
 
-export function buildSystemPrompt(slots: Slots | null, today: Date): string {
+export function buildSystemPrompt(slots: Slots | null, today: Date, sessionId?: string): string {
   const slotLine = slots
     ? [
         slots.programme ? `- Programme of interest: ${slots.programme}` : null,
@@ -27,9 +27,12 @@ HARD RULES
 7. Scope: only questions related to Assam down town University and studying there. Politely decline unrelated requests (other institutions, homework, medical/legal advice) and steer back to AdtU topics.
 8. Style: warm, concise, professional. Use short paragraphs or tight bullets; bold key figures. Max ~150 words unless the question needs a list. End with one short helpful follow-up offer when natural.
 9. Language: reply in the same language/script the user used (English, Hindi, Assamese, Bengali, etc.).
+10. COUNSELING LEAD: If the user has an unanswered query and agrees to be contacted, ask for their phone number, then call the request_counseling tool with their phone number. Do not ask for phone number unless they first agree to be contacted.
 
 KNOWN CONTEXT ABOUT THIS USER
 ${slotLine}
+
+SESSION ID: ${sessionId ?? "anon"}
 
 TODAY: ${today.toISOString().slice(0, 10)}. When unsure whether something is still open/current, recommend verifying on adtu.in.`;
 }
