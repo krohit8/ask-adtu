@@ -164,6 +164,7 @@ async function main() {
     session_id TEXT NOT NULL,
     user_query TEXT NOT NULL,
     interested_domain TEXT,
+    topic TEXT,
     phone_number TEXT,
     contact_requested INTEGER DEFAULT 0,
     contact_status TEXT DEFAULT 'pending',

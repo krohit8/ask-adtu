@@ -7,6 +7,7 @@ type Lead = {
   sessionId: string;
   userQuery: string;
   interestedDomain: string | null;
+  topic: string | null;
   phoneNumber: string | null;
   contactRequested: boolean;
   contactStatus: "pending" | "contacted" | "completed";
@@ -202,6 +203,7 @@ export default function AdminDashboard() {
                   <th className="px-4 py-3 font-medium">Session</th>
                   <th className="px-4 py-3 font-medium">Query</th>
                   <th className="px-4 py-3 font-medium">Domain</th>
+                  <th className="px-4 py-3 font-medium">Topic</th>
                   <th className="px-4 py-3 font-medium">Phone</th>
                   <th className="px-4 py-3 font-medium">Requested</th>
                   <th className="px-4 py-3 font-medium">Status</th>
@@ -213,13 +215,14 @@ export default function AdminDashboard() {
                 {leads.map((lead) => (
                   <tr key={lead.id} className="hover:bg-zinc-900/30">
                     <td className="px-4 py-3 text-zinc-400">{lead.id}</td>
-                    <td className="max-w-[160px] truncate px-4 py-3 font-mono text-xs text-zinc-500">
+                    <td className="max-w-40 truncate px-4 py-3 font-mono text-xs text-zinc-500">
                       {lead.sessionId}
                     </td>
-                    <td className="max-w-[300px] truncate px-4 py-3 text-zinc-200" title={lead.userQuery}>
+                    <td className="max-w-75 whitespace-normal break-words px-4 py-3 align-top text-zinc-200" title={lead.userQuery}>
                       {lead.userQuery}
                     </td>
                     <td className="px-4 py-3 text-zinc-300">{lead.interestedDomain ?? "-"}</td>
+                    <td className="px-4 py-3 text-zinc-300">{lead.topic ?? "-"}</td>
                     <td className="px-4 py-3 font-mono text-zinc-300">{lead.phoneNumber ?? "-"}</td>
                     <td className="px-4 py-3">
                       <span

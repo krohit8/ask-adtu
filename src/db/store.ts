@@ -1,4 +1,4 @@
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import initSqlJs from "sql.js";
 
@@ -44,13 +44,25 @@ async function openDb(): Promise<InstanceType<SqlJs["Database"]>> {
       session_id TEXT NOT NULL,
       user_query TEXT NOT NULL,
       interested_domain TEXT,
+      topic TEXT,
       phone_number TEXT,
       contact_requested INTEGER DEFAULT 0,
       contact_status TEXT DEFAULT 'pending',
       created_at TEXT NOT NULL
     ); CREATE INDEX IF NOT EXISTS idx_leads_session ON leads(session_id); CREATE INDEX IF NOT EXISTS idx_leads_status ON leads(contact_status);`);
+    try {
+      db.exec("ALTER TABLE leads ADD COLUMN topic TEXT");
+    } catch {
+      // column already exists
+    }
   }
   return db;
+}
+
+async function persistDb() {
+  if (!db) return;
+  const data = db.export();
+  writeFileSync(DB_PATH, Buffer.from(data.buffer, data.byteOffset, data.byteLength));
 }
 
 export async function isReady(): Promise<boolean> {
@@ -66,6 +78,7 @@ export interface Lead {
   sessionId: string;
   userQuery: string;
   interestedDomain: string | null;
+  topic: string | null;
   phoneNumber: string | null;
   contactRequested: boolean;
   contactStatus: "pending" | "contacted" | "completed";
@@ -76,18 +89,20 @@ export async function createLead(data: {
   sessionId: string;
   userQuery: string;
   interestedDomain?: string | null;
+  topic?: string | null;
   phoneNumber?: string | null;
   contactRequested?: boolean;
 }): Promise<Lead> {
   const d = await openDb();
   const now = new Date().toISOString();
   d.run(
-    `INSERT INTO leads (session_id, user_query, interested_domain, phone_number, contact_requested, contact_status, created_at)
-     VALUES (?, ?, ?, ?, ?, ?, ?)`,
+    `INSERT INTO leads (session_id, user_query, interested_domain, topic, phone_number, contact_requested, contact_status, created_at)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
     [
       data.sessionId,
       data.userQuery,
       data.interestedDomain ?? null,
+      data.topic ?? null,
       data.phoneNumber ?? null,
       data.contactRequested ? 1 : 0,
       "pending",
@@ -96,11 +111,13 @@ export async function createLead(data: {
   );
   const idResult = d.exec("SELECT last_insert_rowid() as id");
   const id = (idResult[0]?.values[0]?.[0] as number) ?? 0;
+  await persistDb();
   return {
     id,
     sessionId: data.sessionId,
     userQuery: data.userQuery,
     interestedDomain: data.interestedDomain ?? null,
+    topic: data.topic ?? null,
     phoneNumber: data.phoneNumber ?? null,
     contactRequested: !!data.contactRequested,
     contactStatus: "pending",
@@ -123,7 +140,7 @@ export async function getLeads(options?: {
   const countRow = countStmt.getAsObject() as { total: number };
   countStmt.free();
   const stmt = d.prepare(
-    `SELECT id, session_id, user_query, interested_domain, phone_number, contact_requested, contact_status, created_at
+    `SELECT id, session_id, user_query, interested_domain, topic, phone_number, contact_requested, contact_status, created_at
      FROM leads ${where} ORDER BY id DESC LIMIT ? OFFSET ?`,
   );
   if (status) stmt.bind([status, limit, offset]);
@@ -135,6 +152,7 @@ export async function getLeads(options?: {
       session_id: string;
       user_query: string;
       interested_domain: string | null;
+      topic: string | null;
       phone_number: string | null;
       contact_requested: number;
       contact_status: string;
@@ -145,6 +163,7 @@ export async function getLeads(options?: {
       sessionId: row.session_id,
       userQuery: row.user_query,
       interestedDomain: row.interested_domain,
+      topic: row.topic,
       phoneNumber: row.phone_number,
       contactRequested: !!row.contact_requested,
       contactStatus: row.contact_status as Lead["contactStatus"],
@@ -158,12 +177,14 @@ export async function getLeads(options?: {
 export async function updateLeadStatus(id: number, status: Lead["contactStatus"]): Promise<boolean> {
   const d = await openDb();
   d.run("UPDATE leads SET contact_status = ? WHERE id = ?", [status, id]);
+  await persistDb();
   return true;
 }
 
 export async function updateLeadPhone(id: number, phoneNumber: string): Promise<boolean> {
   const d = await openDb();
   d.run("UPDATE leads SET phone_number = ? WHERE id = ?", [phoneNumber, id]);
+  await persistDb();
   return true;
 }
 

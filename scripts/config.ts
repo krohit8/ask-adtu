@@ -14,6 +14,7 @@ export const CRAWL = {
     "https://adtu.in/disa/",
     "https://adtu.in/blog/",
     "https://adtu.in/news-and-events/",
+    "https://adtu.in/blog/adtu-admission-2026-eligibility-fees-and-application-process-14-2-26",
   ],
   /** Only keep URLs whose path matches at least one of these (topical relevance). */
   include: [

@@ -10,6 +10,7 @@
     "crawl": "tsx scripts/crawl.ts",
     "pdf": "tsx scripts/extract-pdf.ts",
     "ingest": "tsx scripts/ingest.ts",
+    "ocr": "node scripts/ocr-brochure.mjs",
     "eval": "tsx eval/run.ts",
     "typecheck": "tsc --noEmit"
   },

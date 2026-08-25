@@ -19,23 +19,32 @@ const APP_STATUSES = [
   { stage: "Enrolled", detail: "Admission confirmed. Welcome to AdtU!" },
 ];
 
-export function counselingTool(
-  sessionId: string,
-  interestedDomain: string | undefined,
-  userQuery: string,
-) {
+export function counselingTool(sessionId: string, userQuery: string) {
   return tool({
     description:
-      "Record a counseling lead when the user wants the counseling team to contact them. Call this ONLY after the user explicitly agrees and provides a phone number.",
+      "CAPTURE A COUNSELING LEAD. Call this tool IMMEDIATELY when the user has agreed to be contacted AND has provided their phone number. This tool stores the lead in the database so the counseling team can follow up. You MUST call this tool - do not just acknowledge the phone number in your text response. The counseling team will handle the actual phone call. Along with the phone number, pass interestedDomain (the programme/branch the student asked about, inferred from the whole conversation) and topic (what they want help with, e.g. fee structure, eligibility, scholarship).",
     inputSchema: z.object({
-      phoneNumber: z.string().min(7).describe("Student's phone number with country code if possible"),
-      contactRequested: z.boolean().default(true).describe("Whether the user consented to be contacted"),
+      phoneNumber: z.string().min(7).describe("The student's phone number that they just provided in the chat. Use the exact number they gave."),
+      contactRequested: z.boolean().default(true).describe("Set to true - the user has agreed to be contacted"),
+      interestedDomain: z
+        .string()
+        .optional()
+        .describe(
+          "The academic programme or branch the student is interested in, inferred from the conversation - e.g. 'B.Tech CSE', 'MBA', 'Humanities', 'B.Sc Nursing', 'Law'. Use the student's actual field of interest, NOT a default. Omit only if the student never indicated any programme or field.",
+        ),
+      topic: z
+        .string()
+        .optional()
+        .describe(
+          "What the student wants the counseling team to help them with, inferred from the conversation - e.g. 'fee structure', 'eligibility', 'scholarship', 'admission process', 'hostel', 'placements'. Omit only if genuinely unclear.",
+        ),
     }),
-    execute: async ({ phoneNumber, contactRequested }) => {
+    execute: async ({ phoneNumber, contactRequested, interestedDomain, topic }) => {
       await createLead({
         sessionId,
         userQuery,
         interestedDomain: interestedDomain ?? null,
+        topic: topic ?? null,
         phoneNumber,
         contactRequested,
       });
