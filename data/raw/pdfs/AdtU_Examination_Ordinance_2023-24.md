@@ -11,8 +11,6 @@ Assam down town University
 Sankar Madhab Path, Gandhi Nagar, Panikhaiti, Guwahati,
 Assam, India Pin-781026
 
--- 1 of 65 --
-
 Sl. No. Contents Page No.
 1. Title 1
 2. Date of Enforcement 1
@@ -67,8 +65,6 @@ responsibilities
 49. Branch Change Policy 59
 50. Credit Transfer 60
 
--- 2 of 65 --
-
 1
 The Assam down town University
 Examination Ordinance, 2023-24
@@ -103,8 +99,6 @@ Com, MA, MSc, B Tech, M.Tech, BBA, MBA, BCA, MCA, B.Pharm,
 M. Pharm, BSc. Nursing, MSc. Nursing etc. in the conventional
 system. A Program is the combination of a number of courses linked
 together.
-
--- 3 of 65 --
 
 2
 4.05 Course: A Course is a paper in the conventional system. It is
@@ -144,8 +138,6 @@ form (written, oral, online, teleconferencing, etc.) or any category
 University responsible for all activities of the Examination branch (i.e.
 conduct of Examinations, declaration of results etc.)
 
--- 4 of 65 --
-
 3
 4.13 Examination Committee: A committee constituted for examination
 purposes as per the provision of the Ordinance and the ADTU Act.
@@ -180,8 +172,6 @@ like tests, open-book tests, assignments, quizzes, case studies,
 presentations, viva-voce, and others as approved by the Examination
 Committee. All the components of evaluation are to be spread across
 the Semester.
-
--- 5 of 65 --
 
 4
 4.23 External Examiner: Shall mean an examiner who is not under the
@@ -218,8 +208,6 @@ shall indicate successful completion of a course.
 there shall be 03 (three) additional Letter Grades, which shall be
 awarded if a Course is withdrawn or spanned over the next
 Semester or remains incomplete as stated in Table 1.2.
-
--- 6 of 65 --
 
 5
 Table 1: Letter Grades and Grade Points
@@ -277,8 +265,6 @@ Distinction
 50 to<60 5 to <6 5.00-5.99 Pass
 <50 <5 0 Failed
 
--- 7 of 65 --
-
 6
 4.29 Grade Point Average:
 SGPA (Semester Grade Point Average)
@@ -328,8 +314,6 @@ CGPA = ∑ 𝐶𝑖𝐺𝑖
 𝑖=1
 (1.2)
 
--- 8 of 65 --
-
 7
 For BSc (Honours) Agriculture Programme, CGPA is calculated
 as
@@ -367,8 +351,6 @@ practical, workshop, seminar etc., as the case may be, scheduled for
 them.
 b) Unless otherwise provided for a specific course(s), a student will be
 allowed to appear in the End-Term Examination of a particular subject,
-
--- 9 of 65 --
 
 8
 only if he/she has attended at least 75% of the aggregate of all the
@@ -415,8 +397,6 @@ Marks
 5. Class Participation -- 05
 Total 40
 
--- 10 of 65 --
-
 9
 5.01 Criteria involved and mode of conduct:
 1. Sessional Examinations:
@@ -458,8 +438,6 @@ Controller of Examination.
 present it during the class. The topic of the presentation shall be
 informed to the students well in advance from the syllabus by the
 course in-charge.
-
--- 11 of 65 --
 
 10
  The presentation may be a group presentation or an individual
@@ -503,8 +481,6 @@ printed while in the case of Computer Based Examination/Test (CBT)
 the student logs in through ERP with the Hall ticket number to appear
 for the examination. Once the student finishes the examination, he can
 
--- 12 of 65 --
-
 11
 submit the answer online. The faculty can check the answer sheets in
 ERP and award the marks in ERP at the designated place. The marks
@@ -527,8 +503,6 @@ printed through ERP.
 The ERP generates the transfer certificates, migration certificates and character
 certificates after the necessary clearance from the examination office to be issued
 by the Office of the Registrar.
-
--- 13 of 65 --
 
 12
 5.04 Examination Automation System
@@ -566,8 +540,6 @@ n) The students are able to apply for transfer certificate, character certificat
 and migration certificate online after the completion of course.
 o) Automatic transfer of students to alumni portal at the completion of course
 after the student receive the final degree certificate.
-
--- 14 of 65 --
 
 13
 The status of automation related to examination activities
@@ -632,8 +604,6 @@ Grade-Sheets
 Post
 -Examination
 
--- 15 of 65 --
-
 14
 The Examination portal mainly consists of the following processes: -
  Course Registration of Students (in the academic portal for every new
@@ -658,8 +628,6 @@ academic session.
 Step 2: The Concerned Programme Coordinators filled up the above form with
 student Enrolment ID, Semester and the courses assigned to the particular student.
 
--- 16 of 65 --
-
 15
 Question repository update:
 Step1: Questions are uploaded in the Question Repository of academic portal by
@@ -669,8 +637,6 @@ examination system displays only the verified/moderated questions) .
 Practical marks & Sessional marks tabulation in the Examination portal:
 Step1: Practical marks and sessional marks can be inserted by selecting the
 semester, course and type of examination in the Dashboard of Assigned Faculties.
-
--- 17 of 65 --
 
 16
 Updation of Examination Schedule in the academic portal:
@@ -683,8 +649,6 @@ Result Sheet Generation:
 Result sheet is generated after the online examination and marks tabulation is
 over.
 
--- 18 of 65 --
-
 17
 Step 1: Go to Results in the left sidebar of Examination portal.
 Step 2: Select Result Sheet.
@@ -692,8 +656,6 @@ Step 3: In the drop-down select the examination and faculty.
 Step 4: Click on “Generate Results” button and then select type of Semester
 (Final or Intermedidate).
 Grace Marks Calculation (if any):
-
--- 19 of 65 --
 
 18
 Step 1: Grace marks are caculated by going to “Calculate Grace” menu under the
@@ -708,8 +670,6 @@ semester, then click on “Generate SGPA”.
 Calulation of CGPA:
 CGPA calculation process is similar to SGPA.
 
--- 20 of 65 --
-
 19
 Marksheet Print/E-Marksheet Publish:
 SGPA marksheets are sent to print from the “Approved” tab under SGPA panel
@@ -723,8 +683,6 @@ Compartmental Examination:
  A student can apply for the compartmental examination from the student
 portal. The same is reflected in the academic portal under compartmental
 application panel.
-
--- 21 of 65 --
 
 20
  Same as Regular Examination, schedules are set in the Academic Portal.
@@ -769,8 +727,6 @@ There shall be an Examination Committee constituted as follows:
 (x) Senior Deputy Controller of Examinations shall be the Member-
 Secretary of the Committee.
 
--- 22 of 65 --
-
 21
 5.08 Power and Functions of the Examination Committee:
 The Committee shall have the following duties and responsibilities:
@@ -809,8 +765,6 @@ Deans as well as IT Officer for circulation and updating in ERP.
 department and the concerned faculty shall enter the marks in ERP
 followed by the submission of the respective Acknowledgement
 receipts to the Office of the Controller of Examinations.
-
--- 23 of 65 --
 
 22
  In conducting the practical examination which includes laboratory-
@@ -852,8 +806,6 @@ themselves about the eligibility of the candidates to appear for an
 examination.
 However, the University may evolve / adopt such methods as it deems
 fit from time to time for admission to an examination.
-
--- 24 of 65 --
 
 23
  Student Registration (through Academic portal in ERP) in different
@@ -899,8 +851,6 @@ year.
 (i) The fees for the different examinations shall be at the rate as
 prescribed by the University from time to time.
 
--- 25 of 65 --
-
 24
 (ii) No application shall be entertained unless accompanied by the
 prescribed fees.
@@ -940,8 +890,6 @@ confirmation, the CoE shall send a formal letter for setting the
 question paper along with the previous question paper and the
 syllabus. The external paper setter shall be given 25 days’ time to
 send the question paper.
-
--- 26 of 65 --
 
 25
 (iv) The paper setter of the concerned subject shall send the question
@@ -983,8 +931,6 @@ illustrate, infer, etc.
 justify, compare
 6 Create Design, Formulate, Modify, Develop, integrate, etc.
 
--- 27 of 65 --
-
 26
 8.04 Framing of questions papers:
 (i) Question papers shall be prepared well ahead of the scheduled
@@ -1013,8 +959,6 @@ the same Unit / topic only.
 (v) The moderator will strictly ensure that the question papers were
 prepared as per the course outcome mentioned in the syllabus to
 facilitate the attainment of the intended outcome.
-
--- 28 of 65 --
 
 27
 8.06 Printing and Uploading of Question Papers:
@@ -1055,8 +999,6 @@ no other person has access to them.
 Papers.
 (iii) The Controller of Examinations shall remain invariably present
 during the process of sorting out the question papers.
-
--- 29 of 65 --
 
 28
 8.08 Computer Based Examination
@@ -1100,8 +1042,6 @@ earn the required credit. The allotment of marks and mode of
 assessment shall be as provided in the Regulations of the Program
 concerned.
 
--- 30 of 65 --
-
 29
 (ii) The marks of the In-Semester examinations shall be shared by the
 respective Course Teacher immediately after the evaluation is
@@ -1142,8 +1082,6 @@ Charge and invigilators ahead of that examination. As a general
 rule, there may be one invigilator for every twenty candidates.
 The invigilators shall discharge their duties under the guidance
 of the Officer-in-Charge.
-
--- 31 of 65 --
 
 30
 iv) Shall be provided with a copy of the Roll Sheet of the candidates
@@ -1190,8 +1128,6 @@ xvi) shall have the authority to expel a candidate from an
 examination, if he / she violates examination rules or resorts to
 any disorderly conduct or adopts any unfair means for which
 he/she is liable to be expelled.
-
--- 32 of 65 --
 
 31
 xvii) will report the following activities to the COE on the date of
@@ -1241,8 +1177,6 @@ Controller of
 Examinations
 04 Invigilators Any Faculty Officer-in-Charge
 
--- 33 of 65 --
-
 32
 11. Procedure of Expulsion:
 The University has zero tolerance to any kind of unfair means during the
@@ -1291,8 +1225,6 @@ offensive language in the answer
 paper or in letters to the examiners
 or writes to the examiner requesting
 him/her to award pass marks
-
--- 34 of 65 --
 
 33
 6 Willfully writing wrong Roll
@@ -1354,8 +1286,6 @@ with answer script, notes paper or
 other material or device, used or
 attempted to be used for assistance
 in answering a question
-
--- 35 of 65 --
 
 34
 14 Any insertion in answer booklet
@@ -1425,8 +1355,6 @@ b) If the person who impersonates
 is a student of the University,
 suitable action will be taken
 
--- 36 of 65 --
-
 35
 against such student by the Dean
 of Faculties.
@@ -1488,8 +1416,6 @@ permitted to appear for any
 Examination of this University
 for a period of Two years from
 
--- 37 of 65 --
-
 36
 the Date of production of the
 forged documents.
@@ -1542,8 +1468,6 @@ shall be sent. The packet(s) containing the Question papers shall be sent to
 the Officer-in-Charge of the Examination at least half an hour before
 commencement of the examination.
 
--- 38 of 65 --
-
 37
 13.1 Officer-in-Charge to check the Number of Question Paper
 packet/s:
@@ -1585,8 +1509,6 @@ adequate time.
 then the examination may be cancelled and a fresh date for the same
 paper shall be announced for holding the examination on the paper as
 early as possible.
-
--- 39 of 65 --
 
 38
 14. Candidates to take seat 15 minutes before examination hour:
@@ -1630,8 +1552,6 @@ outside the room.
 writing their name or putting any sign / symbol in any part of their
 answer script.
 
--- 40 of 65 --
-
 39
 (ix) The students shall not use any abusive language write any
 objectionable remark or make any appeal to the examiner by writing
@@ -1674,8 +1594,6 @@ Registration Number and obtain, the signature of each candidate
 appearing in the examination on the attendance-sheet every day. Those
 who are absent shall be marked Absent or Abs in the attendance-sheet
 
--- 41 of 65 --
-
 40
 and the invigilator shall also sign the attendance-sheet at the bottom.
 Any correction against Name, Registration Number, Roll Number etc.
@@ -1716,8 +1634,6 @@ a brief duration to attend the call of nature the invigilator shall
 record the temporary absence and the duration thereof in a
 temporary absentee-record and also keep him/her under
 observation.
-
--- 42 of 65 --
 
 41
 (ix) In case of delay beyond three minutes on the part of the candidate
@@ -1765,8 +1681,6 @@ many were distributed to the candidates and how many additional
 sheets were supplied to candidates, and compare the figures with
 the attendance-sheet.
 
--- 43 of 65 --
-
 42
 (xix) When the period of a session is over, the invigilator/s shall collect
 all the answer scripts immediately and shall ensure that no
@@ -1809,8 +1723,6 @@ Answer Scripts to the Controller of Examinations on the same day with all
 measures of safety, security and secrecy, keeping with him/her a copy of
 the Dispatch Report.
 
--- 44 of 65 --
-
 43
 22. Other papers which are to be sent to the Examination Cell:
 At the end of the entire examination, the Officer in-Charge shall dispatch
@@ -1848,8 +1760,6 @@ examination for which he / she is so appointed.
 he/she shall carefully examine the seals and the packing of the
 packets so as to satisfy himself/herself that these have not been
 tampered with.
-
--- 45 of 65 --
 
 44
 (ii) Upon receiving the answer sheet packets, the examiner must count
@@ -1896,8 +1806,6 @@ a) Qualification for scrutinizer:
 No one shall be appointed as a scrutinizer unless he is empaneled as an
 examiner.
 
--- 46 of 65 --
-
 45
 b) Duties of scrutinizers:
 It shall be the duty of the scrutinizer to ensure:
@@ -1940,8 +1848,6 @@ Semester for both Theory and Practical) in ERP as usual process.
  After entering the marks in ERP, the evaluator shall submit the
 respective Acknowledgment receipts (both Sessional and End
 Semester) to the Controller of Examinations.
-
--- 47 of 65 --
 
 46
 c) Authentication of Tabulation Sheets:
@@ -1989,8 +1895,6 @@ officials after completion of the works.
 (xiv) To put their signatures along with names at the designated positions
 on each page of the Tabulation Sets on completion of the jobs.
 
--- 48 of 65 --
-
 47
 27. Minimum Marks / Grade for passing:
 No student shall be declared to have passed any examination unless he/she
@@ -2034,8 +1938,6 @@ appeal in this regard shall be entertained.
 (vi) Only minimum grace marks, as required to pass the Examination
 shall be awarded.
 
--- 49 of 65 --
-
 48
 29. Cases of untraced Answer Scripts:
 If all possible attempts / measures fail to trace a missing Answer Script of
@@ -2078,8 +1980,6 @@ Examination shall prepare a result summary.
  The Controller of Examinations shall call a meeting with the
 Examination Committee members for finalization of the result.
 
--- 50 of 65 --
-
 49
  The examination committee may advise the Controller of
 Examination in case of awarding grace marks as per the Examination
@@ -2121,8 +2021,6 @@ awarded in any of the modes, Annual or Semester, in any of the Papers /
 Courses may appeal to the Controller of Examinations for remedial
 action such as Re-evaluation on payment of a fee as prescribed by the
 University from time to time.
-
--- 51 of 65 --
 
 50
 (i) A student has options to appeal for re-evaluation of his /her answer
@@ -2169,8 +2067,6 @@ the access to answer script. The CoE may arrange for such facility
 and the xerox copy of the answer script may be provided against a
 fee.
 
--- 52 of 65 --
-
 51
 (b) Closure of Grievance/Complaints:
 The complaints shall be considered as disposed of and closed, when
@@ -2212,8 +2108,6 @@ his/her inability to appear in the Mid-Semester, Mid-Semester
 (Practical) or Mid-Semester (Project) Examination of any Course
 due to some genuine reason(s) as specified in Ordinance, the
 Controller of Examinations upon recommendation of Dean of
-
--- 53 of 65 --
 
 52
 Faculty with approval of Vice Chancellor may be allowed to
@@ -2259,8 +2153,6 @@ student shall be required to produce proper documentary evidence against
 the claimed reason (s), as applicable, such as a medical certificate of
 hospitalization or bed rest, death certificate, permission letter and
 
--- 54 of 65 --
-
 53
 certificate of participation in co-curricular events or any such Program,
 report in newspaper or letter from local Police/District Administration
@@ -2301,8 +2193,6 @@ to take disciplinary action against students / candidates adopting unfair
 means in the examination hall.
 a) Constitution of the EDAC:
 The DAC may be constituted with the following persons:
-
--- 55 of 65 --
 
 54
 1. Pro-VC, Chairman,
@@ -2346,8 +2236,6 @@ are available on the ERP of the university.
 44. Issuance of duplicate documents
 The candidate has to apply to the Controller of Examination for the
 
--- 56 of 65 --
-
 55
 duplicate mark-sheet or Certificate along with the prescribed fees.
 45. Issuance of Duplicate Degree/Mark-sheet
@@ -2386,8 +2274,6 @@ to get the degree.
 If a student carries more than the required number of failed courses but
 the student has attended more than 80% of the classes in such case,
 
--- 57 of 65 --
-
 56
 special approval may be obligatory from the Vice-Chancellor with the
 recommendation of Dean, Academics for the promotion to next year.
@@ -2423,8 +2309,6 @@ special approval may be obligatory from the Vice-Chancellor with the
 recommendation of Dean, Academics for the promotion to next year.
 h) Alternatively, for the promotion to different years, a student must
 not have more than 4 failed courses in different years.
-
--- 58 of 65 --
 
 57
 Four Years Degree Course:
@@ -2464,8 +2348,6 @@ the promotion until he/she clears all the papers. Under these
 circumstances,
  A student must adhere to the rules and regulations of the
 promotion policy to get promoted to the next year of study.
-
--- 59 of 65 --
 
 58
  Every student gets two chances to clear off the failed papers in a
@@ -2509,8 +2391,6 @@ exam(s). the student must inform
 i) Inform the Dean of the respective Faculty of Studies before
 the start of the exam(s), and
 
--- 60 of 65 --
-
 59
 ii) Physician's note must state that the student was examined and
 found that the student was unfit to take the exam(s) at the scheduled
@@ -2550,8 +2430,6 @@ c) Under special cases, the University may permit a student admitted to a
 particular course of study to change from one branch of studies to another
 only in the Third semester (after the completion of the first year).
 
--- 61 of 65 --
-
 60
 d) The student eligible for consideration of the change of branch after the first
 year of study must furnish a request application to the Dean to be forwarded
@@ -2584,8 +2462,6 @@ Credit transfer is a process ashore in evidence-based academic decisions that
 provide students with approved and reliable credit upshots for completed
 components of a course of study based on identified equivalence in content and
 learning outcomes between equivalent courses of study.
-
--- 62 of 65 --
 
 61
 a) Facilitation for Transfer of Credits to Other Universities/
@@ -2630,8 +2506,6 @@ faculty exchange;
 l) Any other University/Educational Institution/Research Institution that has
 been recognized and approved for the purpose of credit transfer by the
 Academic Council of the University.
-
--- 63 of 65 --
 
 62
  Request for acceptance of transfer of credits shall be:
@@ -2679,8 +2553,6 @@ equivalent to 2 credits of the University.
 from other Universities/Educational Institutions/Research Institutions in
 full or partial fulfillment of the required Course work. In such cases:
 
--- 64 of 65 --
-
 63
 a) The student shall be required to obtain prior approval of the Dean of
 the School;
@@ -2689,5 +2561,3 @@ c) The maximum number of credits that can be accumulated by a student
 from other institutions shall not exceed 25% of the total credits
 prescribed for the successful completion of the Programme of Study.
 ********
-
--- 65 of 65 --

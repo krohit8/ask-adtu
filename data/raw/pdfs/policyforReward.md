@@ -6,8 +6,6 @@ kind: pdf
 
 1
 
--- 1 of 9 --
-
 2
 Sl. No. POLICY PARTICULARS
 1. Policy Details
@@ -32,8 +30,6 @@ of AdtU (Version 3.0)
 11. Valid upto Till further notification
 12 Superseded by As applicable
 
--- 2 of 9 --
-
 3
 Policy for Reward and Other Financial Benefits for
 Research Publication/Patents by Faculty and Staff
@@ -41,8 +37,6 @@ Members of AdtU (Version 3.0)
 ASSAM DOWN TOWN UNIVERSITY,
 PANIKHAITI, GUWAHATI,
 ASSAM-781026
-
--- 3 of 9 --
 
 4
 Name of the Policy: Policy for Reward and Other Financial Benefits for Research
@@ -60,8 +54,6 @@ R/2023-24/156 dated 30/09/2023
 Effective from: 1st August 2024
 Approved by: Vice Chancellor
 Approval Date: 01/02/2025
-
--- 4 of 9 --
 
 5
 1. Introduction:
@@ -93,8 +85,6 @@ Note: For any designated Research Faculty in each category mentioned in Table 1,
 required to be published to meet the minimum target.
 3.1 For every additional research paper publication over and above the minimum target as specified in Table
 1, will be entitled for reward as per Table 2.
-
--- 5 of 9 --
 
 6
 Table 2. Reward benefit for each additional publication in the range mentioned over and above the
@@ -131,8 +121,6 @@ Additional reward value (Rs)
 5-7.99 30000 each
 8-10 50000 each
 10 plus 70000 each
-
--- 6 of 9 --
 
 7
 Table 4. Reward benefit for Patent and other associated research activities
@@ -193,8 +181,6 @@ Copyright Granted 1 15000
 Citation 100 10000
 Total 910000
 
--- 7 of 9 --
-
 8
 Weightage to be assigned to different category of authors –
 I. Faculty member can avail the reward/benefits for publications where a faculty member
@@ -238,8 +224,6 @@ achieving each milestone or cumulatively after attaining multiple milestones.
  An application has to be submitted to the office of the Director Research with following
 details-
 
--- 8 of 9 --
-
 9
 o ERP ID against each claim, Category of reward claimed.
 o Calculation of total eligible score for reward (to be mentioned in application letter).
@@ -247,5 +231,3 @@ Mentioning the impact factor, books with ISBN number etc.
 The category and amount of reward and any other benefits listed in the policy may change
 from time to time which shall be notified well in advance.
 -End-
-
--- 9 of 9 --

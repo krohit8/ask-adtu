@@ -10,8 +10,6 @@ Assam down town University
 Sankar Madhab Path, Gandhi Nagar, Panikhaiti, Guwahati,
 Assam, India Pin-781026
 
--- 1 of 72 --
-
 Examination Ordinance
 2022-23
 As recommended by the Examination Committee meeting held on July 6, 2022 the
@@ -19,8 +17,6 @@ examination ordinance was passed by the 41st meeting of the Academic Council hel
 April 1, 2022, approved by the 53rd Meeting of the Board of Management, held on April 1,
 2022 and ratified by the Governing Body meeting held on September 13, 2022 vide the
 ordinance to be effective.
-
--- 2 of 72 --
 
 1 | P a g e
 The Assam downtown University
@@ -54,8 +50,6 @@ administrative conveniences.
 experience or combination of courses in a particular field of study. A
 Program may be considered as a Course of Study, such as BA, BSc,
 B. Com, MA, MSc, B Tech, M.Tech, BBA, MBA, BCA, MCA,
-
--- 3 of 72 --
 
 2 | P a g e
 B.Pharm, M. Pharm, BSc. Nursing, MSc. Nursing etc. in the
@@ -94,8 +88,6 @@ an examination is a test to show the knowledge and ability of a
 student. A student who takes an examination is a candidate. It may be
 in any form (written, oral, online, teleconferencing, etc.) or any
 
--- 4 of 72 --
-
 3 | P a g e
 category (Entrance, for promotion to higher level, selection,
 screening, etc.).
@@ -130,8 +122,6 @@ program under the faculty.
 4.22 Continuous evaluation: The University has adopted the policy of
 continuous evaluation, which is carried out by the respective faculty in
 accordance with the rules and regulations of the university.
-
--- 5 of 72 --
 
 4 | P a g e
 Continuous evaluation aims at multi-level assessment and may include
@@ -172,8 +162,6 @@ shall indicate successful completion of a course.
 (iii) Apart from the 08 (eight) regular Letter Grades listed in Table 1,
 there shall be 03 (three) additional Letter Grades, which shall be
 
--- 6 of 72 --
-
 5 | P a g e
 awarded if a Course is withdrawn or spanned over the next
 Semester or remains incomplete as stated in Table 1.2.
@@ -213,8 +201,6 @@ and Ci is the Credit (weight) of that Course.
 CGPA (Cumulative Grade Point Average)
 (i) The CGPA of a student in a Semester of a Program shall be the
 accumulated weighted average of the Grade Points secured by
-
--- 7 of 72 --
 
 6 | P a g e
 the student in all the Credit Courses (both Core and Elective
@@ -258,8 +244,6 @@ and forward it to the IT who will upload the same on the ERP. Every
 student in their respective program shall register the requisite courses,
 which shall be verified by the respective Program Coordinator.
 
--- 8 of 72 --
-
 7 | P a g e
 The final list of successfully registered students, who have fulfilled
 the attendance condition shall be provided to COE at least 15 days
@@ -296,8 +280,6 @@ separately to get the credit.
 In-semester Examination
 The in-semester component includes mid-semester examinations, periodic
 examinations, presentations, quizzes, assignments, and project work. The
-
--- 9 of 72 --
 
 8 | P a g e
 end-semester component is normally descriptive and held through a
@@ -342,8 +324,6 @@ academic calendar.
  The Sum of the two such examinations will be converted into the
 total mark obtained by the students under this component.
 
--- 10 of 72 --
-
 9 | P a g e
 3. Assignments:
  Under this component, a course in-charge will inform the students
@@ -385,8 +365,6 @@ member(s).
 acknowledgment to the Office of the Controller of Examination
 forwarded by the Dean.
 
--- 11 of 72 --
-
 10 | P a g e
  Officials from the Office of the Controller of Examination will
 supervise the whole system with proper contact with the program
@@ -423,8 +401,6 @@ certificates are printed through ERP.
 The ERP generates the transfer certificates, migration certificates and character
 certificates after the necessary clearance from the examination office to be
 issued by the Office of the Registrar.
-
--- 12 of 72 --
 
 11 | P a g e
 5.04 Examination Automation System
@@ -464,11 +440,7 @@ and migration certificate online after the completion of course.
 o) Automatic transfer of students to alumni portal at the completion of
 course after the student receive the final degree certificate.
 
--- 13 of 72 --
-
 12 | P a g e
-
--- 14 of 72 --
 
 13 | P a g e
 The Examination portal is mainly consisting of the following processes: -
@@ -492,8 +464,6 @@ Step 1: Course Registration is done in the academic portal by going to the sub
 menu “Course Registration” under the student tab in the beginning of an
 academic session.
 
--- 15 of 72 --
-
 14 | P a g e
 Step 2: The Concerned Programme Coordinators filled up the above form with
 student Enrolment ID, Semester and the courses assigned to the particular
@@ -504,8 +474,6 @@ by the assigned faculties.
 Step2: Uploaded questions are verified by the authorised dignitories. (The
 online examination system displays only the verified/moderated questions) .
 Practical marks & Sessional marks tabulation in the Examination portal:
-
--- 16 of 72 --
 
 15 | P a g e
 Step1: Practical marks and sessional marks can be inserted by selecting the
@@ -521,16 +489,12 @@ Result Sheet Generation:
 Result sheet is generatedafter the online examination and marks tabulation is
 over.
 
--- 17 of 72 --
-
 16 | P a g e
 Step 1: Go to Results in the left sidebar of Examination portal.
 Step 2: Select Result Sheet.
 Step 3: In the drop-down select the examination and faculty.
 Step 4: Click on “Generate Results” button and then select type of Semester
 (Final or Intermedidate).
-
--- 18 of 72 --
 
 17 | P a g e
 Grace Marks Calculation (if any):
@@ -539,8 +503,6 @@ the “Results” tab.
 Step 2: In the grace marks panel Select the faculty name and the programme
 name from the dropdowns than click on “Calculate Grace”.
 Calulation of SGPA:
-
--- 19 of 72 --
 
 18 | P a g e
 Step 1: Go to E-gradesheet menu in the left sidebar
@@ -553,8 +515,6 @@ Marksheet Print/E-Marksheet Publish:
 SGPA marksheets are sent to print from the “Approved” tab under SGPA panel
 of “E-gradesheet”.
 
--- 20 of 72 --
-
 19 | P a g e
 E-marksheet is also published to the student portal from the same panel by
 selecting the student Enrollment IDs.
@@ -562,8 +522,6 @@ Pass Certificate/Convocation:
 Pass certificate is generated automatically by the system if CGPA is found for a
 student and his/her photo of convocation application is approved.
 Revaluation
-
--- 21 of 72 --
 
 20 | P a g e
 Compartmental Examination:
@@ -598,8 +556,6 @@ eligibility criteria to appear the various examinations, Number of chances to
 appear in an examination to complete a Program, etc.
 Regulations for various Programs offered by the University must be duly
 approved by the Competent authorities.
-
--- 22 of 72 --
 
 21 | P a g e
 5.06 Examination Committee:
@@ -642,8 +598,6 @@ Academic Calendar.
 the same shall be forwarded to the Controller of examinations for
 finalization.
 
--- 23 of 72 --
-
 22 | P a g e
  After finalization, the same may be put up for approval of the Vice
 Chancellor.
@@ -681,8 +635,6 @@ through the ERP under the headings „Course Registration‟,
 (c) he/she has fulfilled the attendance condition as per clause
 (d) he/she is of good conduct and character,
 
--- 24 of 72 --
-
 23 | P a g e
 Under some special cases, a student may be allowed to appear for an
 examination without being registered in the University, but the result
@@ -719,8 +671,6 @@ Examinations in that respective program.
  PC shall send a report the list of students having a percentage less
 than 75% at the end of each month to the concerned Dean.
 
--- 25 of 72 --
-
 24 | P a g e
  Concerned Dean shall verify the list of students having a percentage
 less than 75% and concerned PC shall inform them to report to the
@@ -756,8 +706,6 @@ Admit card for the examination may be downloaded through ERP
 where the system may generate Unique ID Cards through online.
 Provided that the University shall have the right to cancel admission
 for examination of any candidate on valid grounds.
-
--- 26 of 72 --
 
 25 | P a g e
 7. Requisition of stationery for End Semester Examinations:
@@ -798,8 +746,6 @@ ahead of the scheduled end-semester examination. For each
 course, the Controller of Examination will invite three different
 sets of question papers.
 
--- 27 of 72 --
-
 26 | P a g e
 8.02 Qualifications for Paper Setter, Paper Examiner and Moderators:
 The Paper-Setter, Examiner or as a Moderator must possesses the
@@ -832,8 +778,6 @@ recommend, justify, compare
 6 Create Design, Formulate, Modify, Develop, integrate,
 etc.
 
--- 28 of 72 --
-
 27 | P a g e
 8.04 Framing of questions papers:
 (i) Question papers shall be prepared well ahead of the scheduled
@@ -856,8 +800,6 @@ accordance with Bloom's Taxonomy. The moderators are
 required to ensure that the questions are set as per the scope of
 the syllabus and that the distribution of marks is strictly
 revealed in the question paper.
-
--- 29 of 72 --
 
 28 | P a g e
 (iii) The moderators must ensure that questions paper cover the
@@ -897,8 +839,6 @@ register.
  The custodian of Keys of the strong room is vested only with the
 Controller of Examinations.
 
--- 30 of 72 --
-
 29 | P a g e
 8.07 Custody of printed question papers:
 (i) On receipt of the printed question papers, the Controller of
@@ -937,8 +877,6 @@ examination cell. Once the uploading of the question paper in ERP is
 done, it is saved and locked. The question paper can only be
 retrieved on the day of the examination.
 
--- 31 of 72 --
-
 30 | P a g e
 8.09 Examination Duration:
 Each paper of more than 60 marks shall ordinarily be of three
@@ -973,8 +911,6 @@ person so deputed shall work in close collaboration with the
 Internal and External Examiner if any, in the Department, and at
 the end of the examination, submit a report to the Controller of
 Examinations about the conduct of the Practical Examination.
-
--- 32 of 72 --
 
 31 | P a g e
 9. Examination Centre:
@@ -1015,8 +951,6 @@ already prepared. He/she may, however, alter the seat plan as
 and when required as a precautionary measure against any
 unfair means.
 
--- 33 of 72 --
-
 32 | P a g e
 ix) Shall ensure arrangement for the necessary furniture, lights,
 fans, drinking water, urinal and lavatory in proper condition
@@ -1055,8 +989,6 @@ c) Late arrival cases
 d) Discrepancies in Question Paper
 e) Unfair means cases
 f) Any untoward incident happened
-
--- 34 of 72 --
 
 33 | P a g e
 10.1 Responsibilities of Examination Observer:
@@ -1100,8 +1032,6 @@ Controller of
 Examinations
 04 Invigilators Any Faculty Officer-in-
 Charge
-
--- 35 of 72 --
 
 34 | P a g e
 11. Procedure of Expulsion:
@@ -1147,8 +1077,6 @@ stationery supplied by the University
 Cancellation of the
 performance in that subject
 only
-
--- 36 of 72 --
 
 35 | P a g e
 5 Uses objectionable, abusive or
@@ -1210,8 +1138,6 @@ Cancellation of the
 performance in that subject
 only
 
--- 37 of 72 --
-
 36 | P a g e
 12 Mass copying by candidates Cancel the entire examination
 of all the candidates
@@ -1272,8 +1198,6 @@ d) If the person concerned is
 an outsider the Police may be
 informed for necessary action
 
--- 38 of 72 --
-
 37 | P a g e
 17 Impersonating any candidate to
 take/appear for the theory/ practical/
@@ -1325,8 +1249,6 @@ the next two semester
 examinations.
 19 Injuring Invigilator(s)/ officials
 connected with the examinations
-
--- 39 of 72 --
 
 38 | P a g e
 20 Indulging in any other act of
@@ -1383,8 +1305,6 @@ Cancel the Whole
 Examination taken in the
 Semester/ and Debar for Next
 
--- 40 of 72 --
-
 39 | P a g e
 Two year i.e., Four Semester
 / Examination.
@@ -1421,8 +1341,6 @@ Only the Question paper packet meant for a particular date of examination
 shall be sent. The packet(s) containing the Question papers shall be sent to
 the Officer-in-Charge of the Examination at least half an hour before
 commencement of the examination.
-
--- 41 of 72 --
 
 40 | P a g e
 13.1 Officer-in-Charge to check the Number of Question Paper
@@ -1466,8 +1384,6 @@ then the examination may be cancelled and a fresh date for the same
 paper shall be announced for holding the examination on the paper
 as early as possible.
 
--- 42 of 72 --
-
 41 | P a g e
 14 Candidates to take seat 15 minutes before examination hour:
 (i) Every candidate shall take his/her seat at least fifteen minutes before
@@ -1510,8 +1426,6 @@ person outside the room.
 writing their name or putting any sign / symbol in any part of their
 answer script.
 
--- 43 of 72 --
-
 42 | P a g e
 (ix) The students shall not use any abusive language write any
 objectionable remark or make any appeal to the examiner by
@@ -1547,8 +1461,6 @@ prejudice to any other actions that may be taken against him / her under
 the rules of the University.
 Some of the important instructions under Ordinance 14 shall also be
 printed on the front cover page of the Main Answer Script / Book.
-
--- 44 of 72 --
 
 43 | P a g e
 17 Attendance Sheet and Absentee Statement:
@@ -1586,8 +1498,6 @@ check the Admit Card of each examinee to prevent any chance of
 impersonation. The invigilator must ensure that the examinee has made
 all the required entries on the answer script and only then the
 invigilator should put his/her signature on the answer script.
-
--- 45 of 72 --
 
 44 | P a g e
 (vi) The Invigilators shall remain present in the examination-room during
@@ -1628,8 +1538,6 @@ hours. Fifteen minutes after the distribution of question-papers, the
 invigilator shall, after verifying the number of question papers and the
 number of candidates actually present in the room, hand over the
 
--- 46 of 72 --
-
 45 | P a g e
 unused question-papers to the Officer in-Charge, who will keep them
 in his custody till examinations are over. The Officer in-Charge shall
@@ -1669,8 +1577,6 @@ advance.
 (xxiv) The invigilators should switch off or keep in silence mode their mobile
 telephones during the course of the examinations.
 
--- 47 of 72 --
-
 46 | P a g e
 (xxv) The invigilators should also bring to the notice of the Officer-in-
 Charge any complaints or other difficulties pointed out by any student
@@ -1703,8 +1609,6 @@ the Officer authorized by him shall satisfy himself that the seals and the
 packing are in order and that the number of scripts mentioned over the
 packet tally with those in the packet Dispatch Report sent by the Officer
 in-Charge.
-
--- 48 of 72 --
 
 47 | P a g e
 24 Appointment of Examiners:
@@ -1745,8 +1649,6 @@ on the margin of the answer scripts and shall then enter the
 scores answer-wise in the front cover of the answer scripts and
 add their total.
 
--- 49 of 72 --
-
 48 | P a g e
 (vi) If any candidate is found to have answered more questions than
 required according to the instructions in the question-paper, the
@@ -1785,8 +1687,6 @@ answer is taken into account;
 (b) that no answer has been repeated for the same question;
 (c) that no extra answer has been taken into account;
 
--- 50 of 72 --
-
 49 | P a g e
 (d) that no answer has been given marks more than the ones allotted
 to it,
@@ -1822,8 +1722,6 @@ Semester for both Theory and Practical) in ERP as usual process.
  After entering the marks in ERP, the evaluator shall submit the
 respective Acknowledgment receipts (both Sessional and End
 Semester) to the Controller of Examinations.
-
--- 51 of 72 --
 
 50 | P a g e
 26.3 Authentication of Tabulation Sheets:
@@ -1864,8 +1762,6 @@ corresponding examination as compartmental etc.
 and compare these with the concerned Tabulation Sets.
 (xi) To sign the printed Marks Cards / Grade Cards,
 
--- 52 of 72 --
-
 51 | P a g e
 (xii) To Point out the candidate securing the highest marks for
 candidates under Non-CBCS Mode and SGPA, CGPA for
@@ -1905,8 +1801,6 @@ thus added shall be indicated as (+) to the theory paper and as (+) to
 the Grand Total. The Grace Marks thus added are to be shown in
 the Tabulation Set only and not in the Marks Sheet.
 
--- 53 of 72 --
-
 52 | P a g e
 (iv) The Grace marks shall be awarded to the Theory component(s) of
 a Paper only, and not to the other components (Practical, Sessional,
@@ -1942,8 +1836,6 @@ information required for tabulation, computation of the results.
 (i) The Controller of Examinations shall strive to declare the results of
 every examination conducted within a period of 15 (Fifteen) days
 from the last date of the examination for that particular Program.
-
--- 54 of 72 --
 
 53 | P a g e
 (ii) However, the declaration of the results may take a few more days
@@ -1981,8 +1873,6 @@ within 30 days from the last date of examination in case of offline
 examination and 20 days in case of online examination.
  After the declaration of the result, the ERP generated Tabulation Sheets
 shall be printed for official records with proper sign and seal.
-
--- 55 of 72 --
 
 54 | P a g e
 33 Issue of Marks-sheet / Grade Card:
@@ -2022,8 +1912,6 @@ a university-appointed examiner.
 Papers, Project Work, Dissertation etc. However, the students who
 fail in practical examination or viva voce and wish to appear again
 may apply to be evaluated and can do so with the next schedule.
-
--- 56 of 72 --
 
 55 | P a g e
 (vi) After screening the application for re-evaluation, the CoE may
@@ -2068,8 +1956,6 @@ examiners with an appeal process for revaluation of answer sheets.
 (e) Once the answer sheets are valuated, the Chief Examiner of the
 respective Faculty of Studies organizes second evaluation of answer
 
--- 57 of 72 --
-
 56 | P a g e
 scripts for the students who get 5 marks less than the passing marks
 and for the students who get very high marks with a maximum
@@ -2110,8 +1996,6 @@ prescribed format for revaluation through ERP to the Grievance Cell.
 The grievance cell shall forward the revaluation forms to the Controller of
 Examination for necessary action.
 
--- 58 of 72 --
-
 57 | P a g e
  Review:
 The Grievance Redressal Committee will make a thorough review of the
@@ -2147,8 +2031,6 @@ recommendation of Dean of Faculty with approval of Vice
 Chancellor may be allowed to conduct a Make-Up Examination
 on the Course for all such students on a convenient date prior to
 the commencement of the End-Semester examination.
-
--- 59 of 72 --
 
 58 | P a g e
 (b) If a student intimates in advance with proper documentary
@@ -2190,8 +2072,6 @@ the student shall be required to produce proper documentary evidence
 against the claimed reason (s), as applicable, such as a medical
 certificate of hospitalization or bed rest, death certificate, permission
 
--- 60 of 72 --
-
 59 | P a g e
 letter and certificate of participation in co-curricular events or any such
 Program, report in newspaper or letter from local Police/District
@@ -2225,8 +2105,6 @@ only in the Course (s) concerned.
 The syllabus of the Examination will be the same as the one
 prescribed for the year, when the candidate appeared at the
 Examination in the Course concerned.
-
--- 61 of 72 --
 
 60 | P a g e
 39 Examination Disciplinary Action Committee (EDAC):
@@ -2265,8 +2143,6 @@ declaration of the results of the respective examinations, after which
 the scripts shall be disposed of in a manner as decided by the proper
 authority.
 
--- 62 of 72 --
-
 61 | P a g e
 Examinations already held prior to the commencement of this Ordinance
 shall be deemed to have been conducted as per provisions of this
@@ -2296,8 +2172,6 @@ days from the submission of the application.
 The concerned person or agency shall send the document to be verified
 directly to the Controller of Examination. The verification of the
 document will be completed within 3 days.
-
--- 63 of 72 --
 
 62 | P a g e
 46 Students’ Promotion Policy
@@ -2334,8 +2208,6 @@ student must not have more than 4 failed courses available in Second
 Year (Semesters 3 and 4 taken together). To get the final degree, a
 student must clear all the available courses in n+2 years.
 
--- 64 of 72 --
-
 63 | P a g e
 g) If a student carries more than the required number of failed courses but
 the student has attended more than 80% of the classes in such case,
@@ -2370,8 +2242,6 @@ available in the Second Year (Semesters 3 and 4) and may carry 3
 having backlogs in the Third year (Semesters 5 & 6) and Fourth year
 (Semesters 7 & 8) must clear all the courses in n+2 years to be eligible
 to get the degree.
-
--- 65 of 72 --
 
 64 | P a g e
 For those who fail to satisfy the minimum requirement, a compartmental
@@ -2412,8 +2282,6 @@ examination. In this case, the examination department shall arrange a
 special examination for the student within one month of the completion of
 the end-semester examination.
 
--- 66 of 72 --
-
 65 | P a g e
 c) If the absence of any students is unintended or the student could not
 reasonably provide a request for not attending an examination sufficiently
@@ -2452,8 +2320,6 @@ This policy provides opportunities for the students to change the branch
 This will provide impetus for the students not to be affected by the wrong
 decision they have taken during the admission to study a course. The change of
 
--- 67 of 72 --
-
 66 | P a g e
 branch is possible only for the undergraduate students and the student shall not
 be allowed to seek branch change in another discipline of the study.
@@ -2486,8 +2352,6 @@ committee members for the counseling.
 All the changes of branch shall be made in accordance with the above-
 mentioned rules and to be effective only in third semester. The branch change
 policy is not applicable in any of the semester other than the third semester.
-
--- 68 of 72 --
 
 67 | P a g e
 The student who seeks to branch change may apply to the Dean of the Faculty
@@ -2523,8 +2387,6 @@ the completion of the previous semester in another University.
 by a student from the following Universities/Educational Institutions/
 Research Institutions:
 
--- 69 of 72 --
-
 68 | P a g e
 a) Universities recognized under Section 12(b) of the UGC Act;
 b) Universities that are members of the Association of Indian Universities;
@@ -2554,8 +2416,6 @@ c) made in the prescribed format and along with the fees as prescribed by
 the Academic Council of the University from time to time; and
 d) supported by such documents as may be prescribed by the Academic
 Council.
-
--- 70 of 72 --
 
 69 | P a g e
 48.3 Procedures
@@ -2590,8 +2450,6 @@ nor have the semester system, a Course requiring formal classroom
 instruction/lab work of at least 2 hours per week shall be considered as
 equivalent to 2 credits of the University.
 
--- 71 of 72 --
-
 70 | P a g e
  The University may also allow its students to accumulate certain credits
 from other Universities/Educational Institutions/Research Institutions in
@@ -2604,5 +2462,3 @@ c) The maximum number of credits that can be accumulated by a student
 from other institutions shall not exceed 25% of the total credits
 prescribed for the successful completion of the Programme of Study.
 ********
-
--- 72 of 72 --

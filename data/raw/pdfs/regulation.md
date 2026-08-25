@@ -44,5 +44,3 @@ examination) to appear for each course to successfully clear the course work pro
 work.
 ➢ Candidates who successfully completed the course work programme are then allowed for
 synopsis presentation at FRC.
-
--- 1 of 1 --

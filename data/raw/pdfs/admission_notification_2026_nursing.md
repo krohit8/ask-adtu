@@ -35,8 +35,6 @@ Interview/Presentation of Selected Candidates Notification will be sent soon
 Date of Admission in PhD program 20/07/2026 (July)
 PhD Course Work Classes August 2026
 
--- 1 of 3 --
-
 Eligibility Criteria for Admission to Ph.D Programme (only for Faculty of Nursing):
 Applications are invited from eligible scholars who have obtained:
 a. M.Phil. (Nursing) or M.Sc. (Nursing) or a Post Graduate degree in Nursing recognized by
@@ -67,8 +65,6 @@ Issued with due approval of competent authority.
 Registrar
 Assam down town University.
 
--- 2 of 3 --
-
 Copy for favour of their information to:
 1. Executive Secretary to Chancellor, AdtU
 2. Asst. Manager- Officer of Vice Chancellor, AdtU
@@ -83,5 +79,3 @@ Placement/Library/T&D)
 10. HR Office
 11. Notice Boards/Message Desk (For display)
 12. Office file (for record)
-
--- 3 of 3 --

@@ -82,7 +82,16 @@ async function collectRecords(): Promise<Rec[]> {
       const m = raw.match(/^---\n([\s\S]*?)\n---\n\n?([\s\S]*)$/);
       if (!m) continue;
       const meta = Object.fromEntries(
-        m[1].split("\n").map((l) => l.split(/:\s*/).map((x) => x.trim())).filter((a) => a.length === 2),
+        m[1]
+          .split("\n")
+          // split on the FIRST colon only - splitting on every ":" mangled the
+          // source URL (https://...) into 3 parts, so it was dropped and PDF
+          // chunks fell back to a pdf://<file> url that showed up in citations.
+          .map((l): [string, string] | null => {
+            const idx = l.indexOf(":");
+            return idx === -1 ? null : [l.slice(0, idx).trim(), l.slice(idx + 1).trim()];
+          })
+          .filter((pair): pair is [string, string] => pair !== null && pair[0].length > 0),
       ) as Record<string, string>;
       const body = m[2];
       const url = meta.source ?? `pdf://${f}`;

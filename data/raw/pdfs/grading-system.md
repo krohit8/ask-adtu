@@ -58,5 +58,3 @@ CGPA= Ʃ Total Point Scored/Course Credits
 OGPA= Ʃ Total Point Scored (after excluding failure points)/Course Credits
 % of Marks=(OGPA×100)/10
 ******
-
--- 1 of 1 --

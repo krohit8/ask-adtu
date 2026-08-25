@@ -47,8 +47,6 @@ May, 2026
 PhD Course Work Classes Date will be notified in due course of
 times
 
--- 1 of 4 --
-
 Faculty of Study & Research Area for PhD Admission
 Faculty of Study Disciplines
 (Details of Area of Research of PhD)
@@ -88,8 +86,6 @@ relaxation of 5% marks or its equivalent grade may be allowed for those belongin
 SC/ST/OBC (non-creamy layer)/Differently-Abled, Economically Weaker Section (EWS) and
 other categories of candidates as per the decision of the Commission from time to time.
 
--- 2 of 4 --
-
 • Provided that a candidate seeking admission after a 4-year/8-semester bachelor’s degree
 programme should have a minimum of 75% marks in aggregate or its equivalent grade on a
 point scale wherever the grading system is followed. A relaxation of 5% marks or its equivalent
@@ -123,8 +119,6 @@ before interview/presentation.
 • Candidates are required to present and discuss their research interest/area before the
 selection panel.
 
--- 3 of 4 --
-
 Issued with due approval of competent authority.
 (Dr. Ashim Barman)
 Registrar,
@@ -142,5 +136,3 @@ Placement/Library/T&D)
 9. HR Office
 10. Notice Boards/Message Desk (For display)
 11. Office file (for record)
-
--- 4 of 4 --

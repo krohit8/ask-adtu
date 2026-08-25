@@ -33,5 +33,3 @@ Placement/Library/T&D)
 9. HR Office
 10. Notice Boards/Message Desk (For display)
 11. Office file (for record)
-
--- 1 of 1 --

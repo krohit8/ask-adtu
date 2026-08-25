@@ -10,7 +10,7 @@
     "crawl": "tsx scripts/crawl.ts",
     "pdf": "tsx scripts/extract-pdf.ts",
     "ingest": "tsx scripts/ingest.ts",
-    "ocr": "node scripts/ocr-brochure.mjs",
+    "ocr": "tsx scripts/ocr-pdfs.mts",
     "eval": "tsx eval/run.ts",
     "typecheck": "tsc --noEmit"
   },
@@ -23,11 +23,13 @@
     "minisearch": "^7.2.0",
     "next": "16.3.2",
     "pdf-parse": "^2.4.5",
+    "pdf-to-img": "^4.5.0",
     "react": "19.2.8",
     "react-dom": "19.2.8",
     "react-markdown": "^10.1.0",
     "remark-gfm": "^4.0.1",
     "sql.js": "^1.10.3",
+    "tesseract.js": "^5.1.1",
     "zod": "^4.4.3"
   },
   "devDependencies": {
