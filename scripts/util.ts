@@ -33,6 +33,11 @@ export function normalizeUrl(raw: string): string | null {
 export function cleanText(raw: string): string {
   return raw
     .replace(/\r/g, "")
+    // Drop pdf-parse page separators like "-- 3 of 40 --". They are pure noise in
+    // the knowledge base and (worse) accumulate past the extractor's length guard,
+    // so a scanned/image PDF with no real text still looks non-empty. Stripping them
+    // lets the extractor tell a genuinely empty extraction apart from a real one.
+    .replace(/^[ \t]*--[ \t]*\d+[ \t]+of[ \t]+\d+[ \t]*--[ \t]*$/gim, "")
     .replace(/[ \t]+/g, " ")
     .replace(/\n{3,}/g, "\n\n")
     .split("\n")

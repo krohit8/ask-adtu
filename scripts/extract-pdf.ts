@@ -5,7 +5,7 @@
  *
  * Run: npm run pdf
  */
-import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { PDFParse } from "pdf-parse";
@@ -25,6 +25,9 @@ const KEEP = /brochure|prospectus|\bfee|admission|scholar|ordinance|statute|refu
 const SKIP = /result[s]?-of|notification-|ret-20|time-table-for|compartmental|awardee|mom\b|minutes/i;
 /** Known image-based / scanned PDFs that have no extractable text */
 const SKIP_URLS = [/brochure-2026\.pdf$/i];
+/** Below this many real characters (page markers already stripped) the PDF has no
+ *  usable text layer - it is scanned/image-only and needs OCR, not a text parser. */
+const MIN_TEXT_CHARS = 200;
 
 // priority order: money & rules documents first
 function rank(url: string): number {
@@ -44,6 +47,8 @@ async function main() {
   await mkdir(PDF_DIR, { recursive: true });
   let ok = 0;
   let fail = 0;
+  let noText = 0;
+  const needsOcr: Array<{ url: string; slug: string }> = [];
 
   for (const [i, url] of selected.entries()) {
     const slug = slugify(url);
@@ -59,10 +64,20 @@ async function main() {
       try {
         const result = await parser.getText();
         const text = cleanText(result.text ?? "");
-        if (text.length < 200) throw new Error(`extracted too little (${text.length} chars)`);
-        const md = `---\nsource: ${url}\ntitle: ${slug}\nkind: pdf\n---\n\n${text}\n`;
-        await writeFile(outFile, md);
-        ok++;
+        if (text.length < MIN_TEXT_CHARS) {
+          // No real text layer (page markers were stripped by cleanText). This is
+          // almost always a scanned / image-only PDF, so there is nothing for a text
+          // parser to read. Remove any stale blank file left by a previous run and
+          // queue the doc for OCR instead of writing an empty document into the KB.
+          await rm(outFile, { force: true });
+          needsOcr.push({ url, slug });
+          noText++;
+          console.warn(`  [no-text] likely scanned/image PDF (${text.length} chars) - queued for OCR`);
+        } else {
+          const md = `---\nsource: ${url}\ntitle: ${slug}\nkind: pdf\n---\n\n${text}\n`;
+          await writeFile(outFile, md);
+          ok++;
+        }
       } finally {
         await parser.destroy();
       }
@@ -73,7 +88,16 @@ async function main() {
     await sleep(300);
   }
 
-  console.log(`\nDone. extracted=${ok} failed=${fail} -> ${PDF_DIR}`);
+  const ocrManifest = path.join(RAW_DIR, "needs-ocr.json");
+  await writeFile(ocrManifest, JSON.stringify(needsOcr, null, 2) + "\n");
+
+  console.log(`\nDone. extracted=${ok} no-text/needs-ocr=${noText} failed=${fail} -> ${PDF_DIR}`);
+  if (needsOcr.length) {
+    console.log(
+      `${needsOcr.length} scanned/image PDF(s) had no text layer (listed in ${ocrManifest}). ` +
+        `A text parser cannot read these - they need OCR to be ingested.`,
+    );
+  }
 }
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1])) {

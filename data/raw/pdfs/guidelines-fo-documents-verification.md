@@ -23,5 +23,3 @@ given mail id of the grievance cell (i.e. student.grievance@adtu.in) of the univ
 for qualification verification, where to provide us the scan copies of the grade-sheets
 and pass certificate of the student.
 ➢ Competent authority shall respond to the mail providing the detail as per requirement.
-
--- 1 of 1 --

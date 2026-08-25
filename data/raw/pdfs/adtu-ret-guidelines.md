@@ -38,12 +38,8 @@ Sl. No. Type of Questions Allocation of Marks
 4. Basics of Research Methodology
 Total 60
 
--- 1 of 2 --
-
 NB: i) All questions for all the categories will be of MCQ type only.
 ii) The candidates who have qualified UGC/CSIR-NET/(JRF) including
 SLET/SET or passed M.Phil. Degrees (through regular mode only) in the
 concerned subject are exempted from the written examination of AdtU-RET.
 However, they shall have to appear for the interview/personal interaction.
-
--- 2 of 2 --

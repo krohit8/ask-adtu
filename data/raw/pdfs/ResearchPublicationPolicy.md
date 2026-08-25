@@ -10,8 +10,6 @@ Assam down town University
 Gandhinagar,Panikhaiti,Guwahati- 781026
 (AnISO 9001:2015 certified&NAACaccreditedUniversity)
 
--- 1 of 9 --
-
 2
 S.No. POLICYPARTICULARS:
 1. Name of the Policy AdtU Research Publication Policy, 2024
@@ -30,8 +28,6 @@ Number/Memo No. and Date Memo No: AdtU/ DRA-II/2024-25/056
 13. Terminated on In vogue
 14. Supersedes by Not applicable as of now
 Approved by Vice chancellor/Board of Management
-
--- 2 of 9 --
 
 3
 1. Introduction:
@@ -70,8 +66,6 @@ authors to all the submitted as well as final revise version of the manuscript. 
 corresponding author(s) must use the Institutional email address (AdtU.in) in all forms
 of communication related to the manuscript.
 
--- 3 of 9 --
-
 4
 3.3. Co-authors:
 'Co-authors' are all researchers, that meet the authorship criteria, but are not
@@ -109,8 +103,6 @@ self-plagiarism and to be avoided as it can draw severe repercussions. The autho
 take help of the plagiarism and Al detection services provided by AdtU library or any
 other authorized agency of the university to assure themselves that the proposed
 publication is free of all forms of plagiarism.
-
--- 4 of 9 --
 
 5
 4.1.2. Artificial Intelligence (AI): Use of Artificial Intelligence to ghost-write the
@@ -152,8 +144,6 @@ to be given top priority, to the exclusion of other test.
 4.2.2. Researchers must acknowledge the source of funding(s), whether Intra-mural or
 extra-mural in nature and must comply with funding authority's requirements.
 
--- 5 of 9 --
-
 6
 4.2.3. AdtU encourages all authors to obtain a persistent author identification from a
 recognized agency like Vidwan/ORCID/Scopus etc. and use it in the submission process
@@ -181,8 +171,6 @@ leaflets, reports, and other such documents are to be designed in such a manner 
 ensures that the materials align with the university's standards, policies, and objectives
 (Annexure-II).
 
--- 6 of 9 --
-
 7
 Annexure-I
 SoP for submission of research paper/book and book chapter for publication &
@@ -204,8 +192,6 @@ FPS/10/2024, DISA/23/2024 etc.
 3. Directorate of research will take note of the ERP submission of all research and
 review papers. Based on these records, reports on publication of papers will be presented
 to the appropriate forum whenever needed.
-
--- 7 of 9 --
 
 8
 Annexure-II
@@ -229,8 +215,6 @@ Note: The above information/ format should be submitted to the respective Dean o
 faculty of Study/ Head of the establishment with a copy mark to the Directorate of
 Research ( Email- DoR.journalapproval@adtu.in)
 
--- 8 of 9 --
-
 9
 Annexure-III
 Terms and Conditions for publications of Bulletins/ Leaflets/ Report etc.
@@ -243,5 +227,3 @@ university for accuracy, quality, and compliance with university standards and n
 3. Intended publications must receive formal approval from concerned
 department(s)/faculty and from the competent authority as the case may be of the
 university before finalization.
-
--- 9 of 9 --
