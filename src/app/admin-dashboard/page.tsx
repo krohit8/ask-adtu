@@ -173,7 +173,7 @@ export default function AdminDashboard() {
         </div>
       </header>
 
-      <main className="mx-auto max-w-6xl px-4 py-6 sm:px-6">
+      <main className="mx-auto max-w-7xl px-4 py-6 sm:px-6">
         <div className="mb-4 flex gap-2">
           {(["all", "pending", "contacted", "completed"] as StatusFilter[]).map((s) => (
             <button
@@ -218,7 +218,7 @@ export default function AdminDashboard() {
                     <td className="max-w-40 truncate px-4 py-3 font-mono text-xs text-zinc-500">
                       {lead.sessionId}
                     </td>
-                    <td className="max-w-75 whitespace-normal break-words px-4 py-3 align-top text-zinc-200" title={lead.userQuery}>
+                    <td className="max-w-75 whitespace-normal wrap-break-word px-4 py-3 align-top text-zinc-200" title={lead.userQuery}>
                       {lead.userQuery}
                     </td>
                     <td className="px-4 py-3 text-zinc-300">{lead.interestedDomain ?? "-"}</td>
@@ -260,7 +260,7 @@ export default function AdminDashboard() {
                         </span>
                       )}
                     </td>
-                    <td className="px-4 py-3 text-zinc-400">{formatDate(lead.createdAt)}</td>
+                    <td className="whitespace-nowrap px-4 py-3 align-top text-zinc-400">{formatDate(lead.createdAt)}</td>
                     <td className="px-4 py-3">
                       {editingId === lead.id ? (
                         <div className="flex flex-col gap-2">
