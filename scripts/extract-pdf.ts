@@ -23,6 +23,8 @@ function slugify(url: string): string {
 const KEEP = /brochure|prospectus|\bfee|admission|scholar|ordinance|statute|refund|syllabus|regulation|handbook|policy|grading|guidelines/i;
 /** Point-in-time notices that would pollute the KB with stale specifics */
 const SKIP = /result[s]?-of|notification-|ret-20|time-table-for|compartmental|awardee|mom\b|minutes/i;
+/** Known image-based / scanned PDFs that have no extractable text */
+const SKIP_URLS = [/brochure-2026\.pdf$/i];
 
 // priority order: money & rules documents first
 function rank(url: string): number {
@@ -35,7 +37,7 @@ function rank(url: string): number {
 async function main() {
   const urls: string[] = JSON.parse(await readFile(path.join(RAW_DIR, "pdf-urls.json"), "utf8"));
   const selected = urls
-    .filter((u) => KEEP.test(u) && !SKIP.test(u))
+    .filter((u) => KEEP.test(u) && !SKIP.test(u) && !SKIP_URLS.some((re) => re.test(u)))
     .sort((a, b) => rank(a) - rank(b));
   console.log(`Found ${urls.length} PDFs, keeping ${selected.length} after filters.`);
 

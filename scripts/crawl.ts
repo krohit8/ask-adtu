@@ -96,6 +96,15 @@ async function main() {
         if (wait > 0) await sleep(wait);
         nextAllowedAt = Date.now() + Math.ceil(CRAWL.delayMs / CRAWL.concurrency);
 
+        if (/\.pdf(\?|$)/i.test(url)) {
+          pdfUrls.add(url);
+          process.stdout.write(
+            `\r[worker ${id}] pdf=${pdfUrls.size} queue=${queue.length} fails=${failures}  last=${url.slice(0, 70)}          `,
+          );
+          active--;
+          continue;
+        }
+
         const res = await fetchWithRetry(url, {
           timeoutMs: CRAWL.timeoutMs,
           retries: 1,

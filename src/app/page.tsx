@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useChat } from "@ai-sdk/react";
-import { DefaultChatTransport, isToolUIPart, type UIMessage } from "ai";
+import { DefaultChatTransport, type UIMessage } from "ai";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import type { ChatMetadata } from "@/lib/types";
@@ -28,7 +28,7 @@ const QUICK_PROMPTS = [
 function SourcesRow({ sources }: { sources: NonNullable<ChatMetadata["sources"]> }) {
   return (
     <div className="mt-4 mb-2 flex flex-wrap gap-2 animate-fade-in">
-      {sources.map((s, i) => (
+      {sources.map((s) => (
         <a
           key={s.n}
           href={s.url}
@@ -57,10 +57,28 @@ function SourcesRow({ sources }: { sources: NonNullable<ChatMetadata["sources"]>
 export default function Home() {
   const [input, setInput] = useState("");
   const [sessionId] = useState(() => getSessionId());
+  const [initialMessages, setInitialMessages] = useState<UIMessage[] | undefined>(undefined);
   const scrollRef = useRef<HTMLDivElement>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
+  useEffect(() => {
+    fetch(`/api/chat/history?sessionId=${encodeURIComponent(sessionId)}`)
+      .then((r) => r.json())
+      .then((data) => {
+        if (data.history && Array.isArray(data.history)) {
+          const msgs: UIMessage[] = data.history.map((h: { role: string; content: string }, i: number) => ({
+            id: `recovered-${sessionId}-${i}`,
+            role: h.role as "user" | "assistant",
+            parts: [{ type: "text", text: h.content }],
+          }));
+          setInitialMessages(msgs);
+        }
+      })
+      .catch(() => {});
+  }, [sessionId]);
+
   const { messages, sendMessage, status, error, stop } = useChat({
+    messages: initialMessages,
     transport: new DefaultChatTransport({
       api: "/api/chat",
       body: () => ({ sessionId }),
@@ -133,9 +151,6 @@ export default function Home() {
           <div className="mt-8 flex flex-col gap-6">
             {messages.map((m: UIMessage) => {
               const meta = m.metadata as ChatMetadata | undefined;
-              const hasToolOutput = m.parts.some(
-                (p) => isToolUIPart(p) && p.state === "output-available",
-              );
               const isUser = m.role === "user";
 
               return (
@@ -152,13 +167,6 @@ export default function Home() {
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-zinc-300"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
                       </div>
                       <div className="flex min-w-0 flex-1 flex-col pb-4">
-                        {hasToolOutput && (
-                          <div className="mb-4 flex items-center gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="animate-spin text-zinc-500"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>
-                            <span className="text-xs font-medium text-zinc-400">Searching university database...</span>
-                          </div>
-                        )}
-
                         <div className="prose-custom text-[15px] text-zinc-200 break-words">
                           {m.parts
                             .filter((p): p is Extract<typeof p, { type: "text" }> => p.type === "text")

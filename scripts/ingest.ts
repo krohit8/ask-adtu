@@ -6,10 +6,10 @@
  *
  * Run: npm run ingest   (add -- --limit 20 for a smoke run)
  */
-import { mkdir, readdir, readFile } from "node:fs/promises";
+import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import { rmSync } from "node:fs";
 import path from "node:path";
-import Database from "better-sqlite3";
+import initSqlJs from "sql.js";
 import { EMBED } from "./config";
 import { chunkText, hash } from "./util";
 import { DB_PATH } from "../src/db/store";
@@ -146,7 +146,11 @@ async function main() {
 
   rmSync(DB_PATH, { force: true });
   mkdir(path.dirname(DB_PATH), { recursive: true });
-  const db = new Database(DB_PATH);
+
+  const SQL = await initSqlJs({
+    locateFile: (name) => path.resolve(process.cwd(), "node_modules", "sql.js", "dist", name),
+  });
+  const db = new SQL.Database();
   db.exec(`CREATE TABLE chunks (
     id INTEGER PRIMARY KEY,
     url TEXT NOT NULL,
@@ -155,21 +159,39 @@ async function main() {
     kind TEXT NOT NULL,
     text TEXT NOT NULL,
     embedding BLOB NOT NULL
-  ); CREATE INDEX idx_kind ON chunks(kind);`);
+  ); CREATE INDEX idx_kind ON chunks(kind); CREATE TABLE IF NOT EXISTS leads (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    session_id TEXT NOT NULL,
+    user_query TEXT NOT NULL,
+    interested_domain TEXT,
+    topic TEXT,
+    phone_number TEXT,
+    contact_requested INTEGER DEFAULT 0,
+    contact_status TEXT DEFAULT 'pending',
+    created_at TEXT NOT NULL
+  ); CREATE INDEX idx_leads_session ON leads(session_id); CREATE INDEX idx_leads_status ON leads(contact_status);`);
 
+  db.run("BEGIN TRANSACTION");
   const insert = db.prepare(
     "INSERT INTO chunks (url, title, section, kind, text, embedding) VALUES (?, ?, ?, ?, ?, ?)",
   );
-  const tx = db.transaction(() => {
-      selected.forEach((r, i) => {
-        insert.run(r.url, r.title, r.section, r.kind, r.text, Buffer.from(new Float32Array(embeddings[i]).buffer));
-      });
-  });
-  tx();
+  for (let i = 0; i < selected.length; i++) {
+    const r = selected[i];
+    insert.run([r.url, r.title, r.section, r.kind, r.text, Buffer.from(new Float32Array(embeddings[i]).buffer)]);
+  }
+  insert.free();
+  db.run("COMMIT");
 
-  const counts = db.prepare("SELECT kind, COUNT(*) n FROM chunks GROUP BY kind").all();
+  const countsResult = db.exec("SELECT kind, COUNT(*) n FROM chunks GROUP BY kind");
+  const counts = (countsResult[0]?.values ?? []).map((row) => ({
+    kind: row[0] as string,
+    n: row[1] as number,
+  }));
   console.log("\nIngestion complete:", counts);
   console.log(`DB at ${DB_PATH}`);
+
+  const data = db.export();
+  await writeFile(DB_PATH, data);
   db.close();
 }
 

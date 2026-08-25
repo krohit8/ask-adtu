@@ -4,17 +4,24 @@ export interface Slots {
   interests: string[];
 }
 
+export interface HistoryMessage {
+  role: "user" | "assistant";
+  content: string;
+}
+
 interface Session {
   slots: Slots;
   updatedAt: number;
+  history: HistoryMessage[];
 }
 
 const sessions = new Map<string, Session>();
 const SESSION_TTL_MS = 60 * 60 * 1000;
+const MAX_HISTORY = 20;
 
 /** Programme alias table - extend as needed. */
 const PROGRAMME_PATTERNS: Array<[RegExp, string]> = [
-  [/\bb\.?\s?tech\b|\bbtech\b|\bb\.?e\.?\b/i, "B.Tech"],
+  [/\bb\.?\s?tech\b|\bbtech\b|\bb\.\s?e\.?\b/i, "B.Tech"],
   [/\bm\.?\s?tech\b|\bmtech\b/i, "M.Tech"],
   [/\bbca\b|bachelor of computer applications?|computer applications?\b/i, "BCA"],
   [/\bmca\b/i, "MCA"],
@@ -31,6 +38,8 @@ const PROGRAMME_PATTERNS: Array<[RegExp, string]> = [
   [/\bforensic\b/i, "Forensic Science"],
   [/hotel management|hospitality|bhmct/i, "Hotel Management"],
   [/social work|msw|bsw/i, "Social Work"],
+  [/\bhumanities\b|liberal arts/i, "Humanities"],
+  [/\bl\.?l\.?b\.?\b|\bl\.?l\.?m\.?\b|\blaw\b/i, "Law"],
   [/\bb\.?\s?sc\b|\bbsc\b|microbiology|biotechnology|food science/i, "B.Sc"],
   [/\bba\b.*honours|bachelor of arts/i, "BA"],
   [/\bma\b\b|master of arts/i, "MA"],
@@ -62,7 +71,7 @@ export function updateSlots(sessionId: string, userTexts: string[]): Slots {
   }
 
   const s =
-    sessions.get(sessionId) ?? { updatedAt: Date.now(), slots: { interests: [] } };
+    sessions.get(sessionId) ?? { updatedAt: Date.now(), slots: { interests: [] }, history: [] };
   for (const t of userTexts) {
     const p = detectProgramme(t);
     if (p) s.slots.programme = p;
@@ -76,4 +85,25 @@ export function updateSlots(sessionId: string, userTexts: string[]): Slots {
   s.updatedAt = Date.now();
   sessions.set(sessionId, s);
   return s.slots;
+}
+
+export function appendToHistory(sessionId: string, role: "user" | "assistant", content: string) {
+  const s = sessions.get(sessionId);
+  if (!s) return;
+  s.history.push({ role, content });
+  if (s.history.length > MAX_HISTORY) {
+    s.history = s.history.slice(-MAX_HISTORY);
+  }
+  s.updatedAt = Date.now();
+}
+
+export function getHistory(sessionId: string): HistoryMessage[] {
+  const s = sessions.get(sessionId);
+  return s?.history ?? [];
+}
+
+export function getSession(sessionId: string): { slots: Slots; history: HistoryMessage[] } | null {
+  const s = sessions.get(sessionId);
+  if (!s) return null;
+  return { slots: s.slots, history: s.history };
 }

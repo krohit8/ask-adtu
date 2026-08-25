@@ -12,7 +12,7 @@
 
 # testing
 /coverage
-
+data
 # next.js
 /.next/
 /out/
@@ -39,3 +39,4 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+eng.traineddata

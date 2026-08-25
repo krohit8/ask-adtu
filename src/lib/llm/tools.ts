@@ -1,5 +1,6 @@
 import { tool } from "ai";
 import { z } from "zod";
+import { createLead } from "@/db/store";
 
 const SIMULATED_NOTE =
   "SIMULATED DEMO DATA - this is a mock service for demonstration, not a real university record. Present it to the user with that caveat.";
@@ -17,6 +18,43 @@ const APP_STATUSES = [
   { stage: "Offer Letter Issued", detail: "Provisional admission offer issued - complete fee payment to confirm seat." },
   { stage: "Enrolled", detail: "Admission confirmed. Welcome to AdtU!" },
 ];
+
+export function counselingTool(sessionId: string, userQuery: string) {
+  return tool({
+    description:
+      "CAPTURE A COUNSELING LEAD. Call this tool IMMEDIATELY when the user has agreed to be contacted AND has provided their phone number. This tool stores the lead in the database so the counseling team can follow up. You MUST call this tool - do not just acknowledge the phone number in your text response. The counseling team will handle the actual phone call. Along with the phone number, pass interestedDomain (the programme/branch the student asked about, inferred from the whole conversation) and topic (what they want help with, e.g. fee structure, eligibility, scholarship).",
+    inputSchema: z.object({
+      phoneNumber: z.string().min(7).describe("The student's phone number that they just provided in the chat. Use the exact number they gave."),
+      contactRequested: z.boolean().default(true).describe("Set to true - the user has agreed to be contacted"),
+      interestedDomain: z
+        .string()
+        .optional()
+        .describe(
+          "The academic programme or branch the student is interested in, inferred from the conversation - e.g. 'B.Tech CSE', 'MBA', 'Humanities', 'B.Sc Nursing', 'Law'. Use the student's actual field of interest, NOT a default. Omit only if the student never indicated any programme or field.",
+        ),
+      topic: z
+        .string()
+        .optional()
+        .describe(
+          "What the student wants the counseling team to help them with, inferred from the conversation - e.g. 'fee structure', 'eligibility', 'scholarship', 'admission process', 'hostel', 'placements'. Omit only if genuinely unclear.",
+        ),
+    }),
+    execute: async ({ phoneNumber, contactRequested, interestedDomain, topic }) => {
+      await createLead({
+        sessionId,
+        userQuery,
+        interestedDomain: interestedDomain ?? null,
+        topic: topic ?? null,
+        phoneNumber,
+        contactRequested,
+      });
+      return {
+        success: true,
+        message: "Your request has been noted. Our counseling team will contact you soon.",
+      };
+    },
+  });
+}
 
 export const adtuTools = {
   get_application_status: tool({
